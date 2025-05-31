@@ -1,0 +1,72 @@
+/* Button Grid Layout */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 15px;
+    padding: 20px;
+    max-width: 350px;
+    margin: auto;
+  }
+  
+  button {
+    padding: 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    background-color: lightgray;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  button:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  button:active {
+    transform: translateY(2px);
+    box-shadow: none;
+  }
+  
+  /* Disabled Button */
+  button:disabled {
+    background-color: #ddd;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+  }
+  
+  /* Button Color Transitions */
+  button[style*="background-color"] {
+    transition: background-color 0.3s ease;
+  }
+/* Reset Button */
+.reset-button {
+    padding: 12px 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    background-color: #ff6f61;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 16px;
+    margin-top: 20px;
+    display: block;
+    width: 100%;
+  }
+  
+  .reset-button:hover {
+    background-color: #ff4c3b;
+    transform: translateY(-4px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .reset-button:active {
+    background-color: #ff3a2d;
+    transform: translateY(2px);
+    box-shadow: none;
+  }
+    
